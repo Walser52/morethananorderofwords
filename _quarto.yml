@@ -2,7 +2,7 @@ project:
   type: website
   output-dir: docs
 website:
-  title: "Latex Tips"
+  title: "More than an order of words"
   navbar:
     left:
       - href: index.qmd
