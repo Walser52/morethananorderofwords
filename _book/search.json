@@ -1,0 +1,86 @@
+[
+  {
+    "objectID": "intro.html",
+    "href": "intro.html",
+    "title": "1  Introduction",
+    "section": "",
+    "text": "This is a book created from markdown and executable code.\nSee Knuth (1984) for additional discussion of literate programming.\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
+  },
+  {
+    "objectID": "summary.html",
+    "href": "summary.html",
+    "title": "2  Summary",
+    "section": "",
+    "text": "In summary, this book has no content whatsoever."
+  },
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "References",
+    "section": "",
+    "text": "Knuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
+  },
+  {
+    "objectID": "paper1.html",
+    "href": "paper1.html",
+    "title": "3  PRB: Orbital Polarization",
+    "section": "",
+    "text": "Title: Origin of the orbital polarization of Co2+ in La2CoTiO6…"
+  },
+  {
+    "objectID": "paper1.html#terminology",
+    "href": "paper1.html#terminology",
+    "title": "3  PRB: Orbital Polarization",
+    "section": "3.6 Terminology",
+    "text": "3.6 Terminology\nWhat are:\n\nSpectrochemical Series:\nGoldschmidt’s Tolerance Factor: predicts the stability of perovskites."
+  },
+  {
+    "objectID": "paper1.html#points-resolved",
+    "href": "paper1.html#points-resolved",
+    "title": "3  PRB: Orbital Polarization",
+    "section": "3.1 Points (Resolved)",
+    "text": "3.1 Points (Resolved)\n\nLigands cause the crystal field to split:\n\nLarge split (aka Strong Field Ligands) implies low spin and vice versa\n\nSplitting is also determined by the oxidation state of the ligand"
+  },
+  {
+    "objectID": "paper1.html#question",
+    "href": "paper1.html#question",
+    "title": "3  PRB: Orbital Polarization",
+    "section": "3.2 Question",
+    "text": "3.2 Question\n\nWhat is meant by the ‘Strength’ of a ligand?\nWhat are the main assumptions of Crystal field theory\nHow is CFT different from Ligand Field Theory\nWhy is the Spectrochemical Series backwards to what is said by the Crystal Field Theory\nJahn Teller Effect\nOctahedral Tilting and Glazer Notation (Clarification)\n\nWhat causes it?\nHow to show it using Vesta/VMD?\n\nElectron-Lattice coupling\nSuperexhcange interactions\nGoodenough-Kanamori Rules\nSuperlattice"
+  },
+  {
+    "objectID": "paper1.html#meeting-2",
+    "href": "paper1.html#meeting-2",
+    "title": "3  PRB: Orbital Polarization",
+    "section": "3.4 Meeting 2",
+    "text": "3.4 Meeting 2"
+  },
+  {
+    "objectID": "paper1.html#meeting-1",
+    "href": "paper1.html#meeting-1",
+    "title": "3  PRB: Orbital Polarization",
+    "section": "3.5 Meeting 1",
+    "text": "3.5 Meeting 1\n\n3.5.1 Agenda for Meeting 2:\n- Discuss Crystal Field Theory literature\n    https://www.youtube.com/watch?v=V1WSesBeURw\n    Figgis: Ligand Field Theory and Its Applications"
+  },
+  {
+    "objectID": "paper1.html#questions",
+    "href": "paper1.html#questions",
+    "title": "3  PRB: Orbital Polarization",
+    "section": "3.2 Questions",
+    "text": "3.2 Questions\n\n3.2.1 Ligand/Crystal Field Theory\n\nWhat is meant by the ‘Strength’ of a ligand?\nWhat are the main assumptions of Crystal field theory\nHow is CFT different from Ligand Field Theory\nWhy is the Spectrochemical Series backwards to what is said by the Crystal Field Theory\nJahn Teller Effect\nOctahedral Tilting and Glazer Notation (Clarification)\n\nWhat causes it?\nHow to show it using Vesta/VMD?\n\nElectron-Lattice coupling\nSuperexhcange interactions\nGoodenough-Kanamori Rules\nSuperlattice\n\n\n\n3.2.2 DFT"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "_Quarto",
+    "section": "",
+    "text": "Preface\nThis is a Quarto book.\nTo learn more about Quarto books visit https://quarto.org/docs/books."
+  },
+  {
+    "objectID": "paper1.html#meeting-3",
+    "href": "paper1.html#meeting-3",
+    "title": "3  PRB: Orbital Polarization",
+    "section": "3.3 Meeting 3",
+    "text": "3.3 Meeting 3"
+  }
+]

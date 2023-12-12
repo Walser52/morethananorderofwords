@@ -1,0 +1,27 @@
+project:
+  type: website
+  output-dir: docs
+website:
+  title: "Latex Tips"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+  sidebar:
+    style: "docked"
+    search: true
+    contents:
+      - section: "Basics"
+        contents:
+          - tables.qmd
+      - section: "Latex"
+        contents:
+          - tables.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: cosmo
+
+

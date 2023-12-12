@@ -1,0 +1,100 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Preface",
+    "section": "",
+    "text": "Preface\nThis is a Quarto book.\nTo learn more about Quarto books visit https://quarto.org/docs/books."
+  },
+  {
+    "objectID": "intro.html",
+    "href": "intro.html",
+    "title": "Introduction",
+    "section": "",
+    "text": "Introduction\nThis is a book created from markdown and executable code.\nSee Knuth (1984) for additional discussion of literate programming.\n\n\n\n\n\nReferences\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
+  },
+  {
+    "objectID": "paper1.html",
+    "href": "paper1.html",
+    "title": "PRB: Orbital Polarization",
+    "section": "",
+    "text": "Origin of the orbital polarization of Co2+ in La2CoTiO6 and (LaCoO3)1+(LaTiO3)1: A DFT+U and DFMT study\n\n\n\nLigands cause the crystal field to split:\n\nLarge split (aka Strong Field Ligands) implies low spin and vice versa\n\nSplitting is also determined by the oxidation state of the ligand\n\n\n\n\n\n\n\nWhat is meant by the ‘Strength’ of a ligand?\nWhat are the main assumptions of Crystal field theory\nHow is CFT different from Ligand Field Theory\nWhy is the Spectrochemical Series backwards to what is said by the Crystal Field Theory\nJahn Teller Effect\nOctahedral Tilting and Glazer Notation (Clarification)\n\nWhat causes it?\nHow to show it using Vesta/VMD?\n\nElectron-Lattice coupling\nSuperexhcange interactions\nGoodenough-Kanamori Rules\nSuperlattice\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n- Discuss Crystal Field Theory literature\n    https://www.youtube.com/watch?v=V1WSesBeURw\n    Figgis: Ligand Field Theory and Its Applications\n\n\n\n\nWhat are:\n\nSpectrochemical Series:\nGoldschmidt’s Tolerance Factor: predicts the stability of perovskites."
+  },
+  {
+    "objectID": "paper1.html#points-resolved",
+    "href": "paper1.html#points-resolved",
+    "title": "PRB: Orbital Polarization",
+    "section": "",
+    "text": "Ligands cause the crystal field to split:\n\nLarge split (aka Strong Field Ligands) implies low spin and vice versa\n\nSplitting is also determined by the oxidation state of the ligand"
+  },
+  {
+    "objectID": "paper1.html#questions",
+    "href": "paper1.html#questions",
+    "title": "PRB: Orbital Polarization",
+    "section": "",
+    "text": "What is meant by the ‘Strength’ of a ligand?\nWhat are the main assumptions of Crystal field theory\nHow is CFT different from Ligand Field Theory\nWhy is the Spectrochemical Series backwards to what is said by the Crystal Field Theory\nJahn Teller Effect\nOctahedral Tilting and Glazer Notation (Clarification)\n\nWhat causes it?\nHow to show it using Vesta/VMD?\n\nElectron-Lattice coupling\nSuperexhcange interactions\nGoodenough-Kanamori Rules\nSuperlattice"
+  },
+  {
+    "objectID": "paper1.html#meeting-1",
+    "href": "paper1.html#meeting-1",
+    "title": "PRB: Orbital Polarization",
+    "section": "",
+    "text": "- Discuss Crystal Field Theory literature\n    https://www.youtube.com/watch?v=V1WSesBeURw\n    Figgis: Ligand Field Theory and Its Applications"
+  },
+  {
+    "objectID": "paper1.html#terminology",
+    "href": "paper1.html#terminology",
+    "title": "PRB: Orbital Polarization",
+    "section": "",
+    "text": "What are:\n\nSpectrochemical Series:\nGoldschmidt’s Tolerance Factor: predicts the stability of perovskites."
+  },
+  {
+    "objectID": "DFT.html",
+    "href": "DFT.html",
+    "title": "DFT",
+    "section": "",
+    "text": "DFT\nThis is DFT"
+  },
+  {
+    "objectID": "summary.html",
+    "href": "summary.html",
+    "title": "Summary",
+    "section": "",
+    "text": "Summary\nIn summary, this book has no content whatsoever."
+  },
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "References",
+    "section": "",
+    "text": "References"
+  },
+  {
+    "objectID": "glossary.html",
+    "href": "glossary.html",
+    "title": "Glossary",
+    "section": "",
+    "text": "Glossary\nTerms."
+  },
+  {
+    "objectID": "tables.html",
+    "href": "tables.html",
+    "title": "Tables",
+    "section": "",
+    "text": "Source To hide a column that in a longtable or a tabular environment\n\\newsavebox\\dummy\n\\newcolumntype{H}{&gt;{\\begin{lrbox}{\\dummy}}c&lt;{\\end{lrbox}}@{}}\nYou can now use H for any column that you wish to hide.\n\\begin{tabular}{rHl}\nComplete example:\n    \\documentclass{article}\n    \\usepackage{array}\n    \\newsavebox\\dummy\n    \\newcolumntype{H}{&gt;{\\begin{lrbox}{\\dummy}}c&lt;{\\end{lrbox}}@{}}\n    \\begin{document}\n    \\raggedright\n    \\begin{tabular}{rl}\n    one & two\\\\\n    three & four\\\\\n    \\end{tabular}\n\n    \\begin{tabular}{rHl}\n    one & something & two\\\\\n    three & not visible & four\\\\\n    \\end{tabular}\n    \\end{document}"
+  },
+  {
+    "objectID": "tables.html#longtable",
+    "href": "tables.html#longtable",
+    "title": "Tables",
+    "section": "",
+    "text": "To hide a column that is\n\\newsavebox\\dummy\n\\newcolumntype{H}{&gt;{\\begin{lrbox}{\\dummy}}c&lt;{\\end{lrbox}}@{}}"
+  },
+  {
+    "objectID": "tables.html#hide-a-column",
+    "href": "tables.html#hide-a-column",
+    "title": "Tables",
+    "section": "",
+    "text": "Source To hide a column that in a longtable or a tabular environment\n\\newsavebox\\dummy\n\\newcolumntype{H}{&gt;{\\begin{lrbox}{\\dummy}}c&lt;{\\end{lrbox}}@{}}\nYou can now use H for any column that you wish to hide.\n\\begin{tabular}{rHl}\nComplete example:\n    \\documentclass{article}\n    \\usepackage{array}\n    \\newsavebox\\dummy\n    \\newcolumntype{H}{&gt;{\\begin{lrbox}{\\dummy}}c&lt;{\\end{lrbox}}@{}}\n    \\begin{document}\n    \\raggedright\n    \\begin{tabular}{rl}\n    one & two\\\\\n    three & four\\\\\n    \\end{tabular}\n\n    \\begin{tabular}{rHl}\n    one & something & two\\\\\n    three & not visible & four\\\\\n    \\end{tabular}\n    \\end{document}"
+  }
+]

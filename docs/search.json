@@ -1,0 +1,23 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Preface",
+    "section": "",
+    "text": "Preface\nThis is a Quarto book.\nTo learn more about Quarto books visit https://quarto.org/docs/books."
+  },
+  {
+    "objectID": "tables.html",
+    "href": "tables.html",
+    "title": "Tables",
+    "section": "",
+    "text": "Source To hide a column that in a longtable or a tabular environment\n\\newsavebox\\dummy\n\\newcolumntype{H}{&gt;{\\begin{lrbox}{\\dummy}}c&lt;{\\end{lrbox}}@{}}\nYou can now use H for any column that you wish to hide.\n\\begin{tabular}{rHl}\nComplete example:\n    \\documentclass{article}\n    \\usepackage{array}\n    \\newsavebox\\dummy\n    \\newcolumntype{H}{&gt;{\\begin{lrbox}{\\dummy}}c&lt;{\\end{lrbox}}@{}}\n    \\begin{document}\n    \\raggedright\n    \\begin{tabular}{rl}\n    one & two\\\\\n    three & four\\\\\n    \\end{tabular}\n\n    \\begin{tabular}{rHl}\n    one & something & two\\\\\n    three & not visible & four\\\\\n    \\end{tabular}\n    \\end{document}"
+  },
+  {
+    "objectID": "tables.html#hide-a-column-without-removing-data",
+    "href": "tables.html#hide-a-column-without-removing-data",
+    "title": "Tables",
+    "section": "",
+    "text": "Source To hide a column that in a longtable or a tabular environment\n\\newsavebox\\dummy\n\\newcolumntype{H}{&gt;{\\begin{lrbox}{\\dummy}}c&lt;{\\end{lrbox}}@{}}\nYou can now use H for any column that you wish to hide.\n\\begin{tabular}{rHl}\nComplete example:\n    \\documentclass{article}\n    \\usepackage{array}\n    \\newsavebox\\dummy\n    \\newcolumntype{H}{&gt;{\\begin{lrbox}{\\dummy}}c&lt;{\\end{lrbox}}@{}}\n    \\begin{document}\n    \\raggedright\n    \\begin{tabular}{rl}\n    one & two\\\\\n    three & four\\\\\n    \\end{tabular}\n\n    \\begin{tabular}{rHl}\n    one & something & two\\\\\n    three & not visible & four\\\\\n    \\end{tabular}\n    \\end{document}"
+  }
+]

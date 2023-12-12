@@ -1,0 +1,37 @@
+# Tables
+
+## Hide a column without removing data
+[Source](https://latex.org/forum/viewtopic.php?t=33157)
+To hide a column that in a longtable or a tabular environment
+
+```
+\newsavebox\dummy
+\newcolumntype{H}{>{\begin{lrbox}{\dummy}}c<{\end{lrbox}}@{}}
+```
+
+You can now use H for any column that you wish to hide. 
+
+```\begin{tabular}{rHl}```
+
+Complete example:
+```
+    \documentclass{article}
+    \usepackage{array}
+    \newsavebox\dummy
+    \newcolumntype{H}{>{\begin{lrbox}{\dummy}}c<{\end{lrbox}}@{}}
+    \begin{document}
+    \raggedright
+    \begin{tabular}{rl}
+    one & two\\
+    three & four\\
+    \end{tabular}
+
+    \begin{tabular}{rHl}
+    one & something & two\\
+    three & not visible & four\\
+    \end{tabular}
+    \end{document}
+```
+
+
+

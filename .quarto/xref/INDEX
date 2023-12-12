@@ -1,0 +1,32 @@
+{
+  "intro.qmd": {
+    "intro.html": "e8fc2f21",
+    "intro.tex": "b7cb3895"
+  },
+  "index.qmd": {
+    "index.html": "8046004a",
+    "index.tex": "184eb6be"
+  },
+  "summary.qmd": {
+    "summary.html": "73cd6a1e"
+  },
+  "references.qmd": {
+    "references.html": "66d55da7"
+  },
+  "paper1.qmd": {
+    "paper1.html": "ece21247",
+    "paper1.tex": "101a098b"
+  },
+  "glossary.qmd": {
+    "glossary.html": "e60a764b",
+    "glossary.tex": "d40abdfd"
+  },
+  "DFT.qmd": {
+    "DFT.html": "b527180b",
+    "DFT.tex": "18d09870"
+  },
+  "tables.qmd": {
+    "tables.html": "cffbce9f",
+    "tables.tex": "5f9b486b"
+  }
+}
