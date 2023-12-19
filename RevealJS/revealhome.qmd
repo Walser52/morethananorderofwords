@@ -2,4 +2,5 @@
 title: RevealJS
 ---
 
-[Collapsible blocks](RevealJS/collapsibleboxes.qmd)
+[Collapsible blocks](collapsibleboxes.qmd)
+[Elegant and minimalist tabs](tabs.qmd)
