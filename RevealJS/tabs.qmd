@@ -1,0 +1,111 @@
+---
+title: Creating tabs
+---
+
+To create something like this:
+
+![](_figs/tabs.png)
+
+
+Use  the following:
+
+## Quarto file (HTML)
+
+<pre>
+## Results
+
+:::{.navbar}
+[Option 1]{.nav-option data-option="option1" onclick="showContent(this)"}
+[Option 2]{.nav-option data-option="option2" onclick="showContent(this)"}
+[Option 3]{.nav-option data-option="option3" onclick="showContent(this)"}
+:::
+
+:::{#option1Content .content}
+![](_figs/caffeine.jpg)
+:::
+
+:::{#option2Content .content}
+![](_figs/aerial-forest.jpg)
+:::
+
+:::{#option3Content .content}
+This is the content for Option 3.
+:::
+</pre>
+
+Note that the data-option values match the prefix of the .content IDs. 
+
+## Javascript
+
+
+```{js}
+<script>
+    function showContent(clickedElement) {
+        // Hide all content divs
+        var allContents = document.getElementsByClassName('content');
+        for (var i = 0; i < allContents.length; i++) {
+            allContents[i].style.display = 'none';
+        }
+
+        // Deactivate all nav options
+        var allNavOptions = document.getElementsByClassName('nav-option');
+        for (var i = 0; i < allNavOptions.length; i++) {
+            allNavOptions[i].classList.remove('active');
+        }
+
+        // Show the selected content
+        var option = clickedElement.getAttribute('data-option');
+        document.getElementById(option + 'Content').style.display = 'block';
+
+        // Activate the selected nav option
+        clickedElement.classList.add('active');
+    }
+</script>
+```
+
+
+
+## CSS
+
+<pre>
+
+
+.navbar {
+    /*background-color: teal;*/
+    background-color: white;
+    overflow: hidden;
+    color: black;
+
+}
+
+.nav-option {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+
+    cursor: pointer;
+    margin: 0;
+}
+
+.nav-option:hover {
+
+    background-color: #ddd;
+    color: black;
+}
+
+.nav-option.active {
+/*    background-color: yellow;*/
+    text-decoration: underline;
+    text-decoration-thickness: 10%;
+    text-decoration-color: Crimson;
+    color: black;
+
+}
+
+.content {
+    padding: 16px;
+    display: none;
+}
+</pre>

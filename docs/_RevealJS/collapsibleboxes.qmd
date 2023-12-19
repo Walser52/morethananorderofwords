@@ -1,0 +1,63 @@
+---
+title: Collapsible Boxes in Reveal
+---
+
+## Desired output:
+We want
+
+## Ingredients
+
+### CSS
+
+
+### QMD file content
+
+````{qmd}
+::::{.columns}
+:::{.column}
+:::: {.dd}
+:::{.dd-head onclick="toggleBox(this)" style="color:red"}
+Capacitive
+:::
+:::{.dd-box }
+-   No charge transfer
+-   Helmholtz Double layer
+-   Electrostatic
+-   Fast
+-   Reversible
+:::
+::::
+:::
+
+
+:::{.column}
+:::: {.dd}
+:::{.dd-head onclick="toggleBox(this)"}
+Diffusive
+:::
+:::{.dd-box}
+-   Charge transfer
+-   Redox reactions
+-   Diffusion limited
+-   Slow
+-   Contains irreversibilities
+:::
+::::
+:::
+::::
+
+
+
+:::: {.dd}
+:::{.dd-head onclick="toggleBox(this)"}
+Picture gets muddled
+:::
+:::{.dd-box}
+-   Charge transfer
+-   Redox reactions
+-   Diffusion limited
+-   Slow
+-   Contains irreversibilities
+:::
+::::
+````

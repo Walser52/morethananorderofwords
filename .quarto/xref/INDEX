@@ -28,5 +28,17 @@
   "tables.qmd": {
     "tables.html": "cffbce9f",
     "tables.tex": "5f9b486b"
+  },
+  "revealhome.qmd": {
+    "revealhome.html": "cab2dcf5"
+  },
+  "RevealJS/collapsibleboxes.qmd": {
+    "collapsibleboxes.html": "f7d59ec7"
+  },
+  "RevealJS/tabs.qmd": {
+    "tabs.html": "a2617db6"
+  },
+  "RevealJS/revealhome.qmd": {
+    "revealhome.html": "4dfdbbe3"
   }
 }

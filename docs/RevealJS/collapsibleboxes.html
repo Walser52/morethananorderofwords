@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>More than an order of words</title>
+<title>More than an order of words - Collapsible Boxes in Reveal</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,22 +23,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -59,8 +59,40 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+<script>
+function toggleBox(header) {
+  // Use jQuery to find the associated container and toggle its visibility
+  $(header).next('.dd-box').slideToggle();
+}
+</script>
 
 
+<script>
+function openCity(evt, cityName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("city");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " w3-red";
+}
+
+</script>
+
+
+
+
+
+
+
+<link rel="stylesheet" href="../css/callouts.css">
 </head>
 
 <body class="nav-sidebar docked nav-fixed fullcontent">
@@ -71,7 +103,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">More than an order of words</span>
     </a>
   </div>
@@ -82,7 +114,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" rel="" target="" aria-current="page">
+    <a class="nav-link" href="../index.html" rel="" target="">
  <span class="menu-text">Home</span></a>
   </li>  
 </ul>
@@ -96,7 +128,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Collapsible Boxes in Reveal</li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -127,7 +159,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./tables.html" class="sidebar-item-text sidebar-link">
+  <a href="../tables.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Tables</span></a>
   </div>
 </li>
@@ -144,7 +176,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./tables.html" class="sidebar-item-text sidebar-link">
+  <a href="../tables.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Tables</span></a>
   </div>
 </li>
@@ -161,7 +193,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./revealhome.html" class="sidebar-item-text sidebar-link">
+  <a href="../revealhome.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">RevealJS</span></a>
   </div>
 </li>
@@ -176,14 +208,170 @@ ul.task-list li input[type="checkbox"] {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Collapsible Boxes in Reveal</h1>
+</div>
 
 
-<section id="preface" class="level1 unnumbered">
-<h1 class="unnumbered">Preface</h1>
-<p>This is a Quarto book.</p>
-<p>To learn more about Quarto books visit <a href="https://quarto.org/docs/books" class="uri">https://quarto.org/docs/books</a>.</p>
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="desired-output" class="level2">
+<h2 class="anchored" data-anchor-id="desired-output">Desired output:</h2>
+<p>To achieve the following effect (in html or in reveal slides).</p>
+<div class="columns">
+<div class="column">
+<div class="dd">
+<div class="dd-head" onclick="toggleBox(this)">
+<p>Thesis</p>
+</div>
+<div class="dd-box">
+<ul>
+<li>Features</li>
+<li>More features</li>
+</ul>
+</div>
+</div>
+</div><div class="column">
+<div class="dd">
+<div class="dd-head" onclick="toggleBox(this)">
+<p>Anti-thesis</p>
+</div>
+<div class="dd-box">
+<ul>
+<li>Anti-Features</li>
+<li>More anti-features</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="dd">
+<div class="dd-head" onclick="toggleBox(this)" style="color:white">
+<p>Synthesis</p>
+</div>
+<div class="dd-box">
+<ul>
+<li>Feature + Anti-feature</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="ingredients" class="level2">
+<h2 class="anchored" data-anchor-id="ingredients">Ingredients</h2>
+</section>
+<section id="javascript" class="level2">
+<h2 class="anchored" data-anchor-id="javascript">Javascript</h2>
+<pre class="{script}"><code>&lt;script src="https://code.jquery.com/jquery-3.6.4.min.js"&gt;&lt;/script&gt;
+
+&lt;script&gt;
+function toggleBox(header) {
+  // Use jQuery to find the associated container and toggle its visibility
+  $(header).next('.dd-box').slideToggle();
+}
+&lt;/script&gt;</code></pre>
+<section id="css" class="level3">
+<h3 class="anchored" data-anchor-id="css">CSS</h3>
+<p>Create a css file:</p>
+<pre class="{css}"><code>    .dd {
+      margin: 1em 0;
+      border: 2px solid gray;
+      border-left: 10px solid teal; 
+      border-radius: 10px;
+    }
+
+    .dd-head {
+      margin-left: 0em;
+      padding-left:  60px;
+      padding-top:  5px;
+      padding-bottom: 0.1em;
+      color: black;
+      background-color: rgb(123, 173, 173);
+      border-top-right-radius: 10px;
+      font-size: 1em;
+      font-weight: bold;
+      background-size: 40px;
+      background-repeat: no-repeat;
+      background-position: 15px center;
+      background-image: url("goal.png");
+      cursor: pointer; /* Add cursor style to indicate it's clickable */
+    }
+
+    .dd-box {
+      padding-top: 5px;
+      padding-left: 10px;
+      color: black;
+      background-color: white;
+      border-bottom-right-radius: 10px;
+      display: none; /* Initially hide the container */
+    }
+</code></pre>
+<p>Link the file so that the yaml header reads:</p>
+<p>format: html: theme: cosmo css: css/callouts.css include-in-header: file: scripts/scripts.js</p>
+</section>
+<section id="qmd-file-content" class="level3">
+<h3 class="anchored" data-anchor-id="qmd-file-content">QMD file content</h3>
+<pre class="{qmd}"><code>
+::::{.columns}
+:::{.column}
+:::: {.dd}
+:::{.dd-head onclick="toggleBox(this)" style="color:red"}
+Capacitive
+:::
+:::{.dd-box }
+-   No charge transfer
+-   Helmholtz Double layer
+-   Electrostatic
+-   Fast
+-   Reversible
+:::
+::::
+:::
 
 
+:::{.column}
+:::: {.dd}
+:::{.dd-head onclick="toggleBox(this)"}
+Diffusive
+:::
+:::{.dd-box}
+-   Charge transfer
+-   Redox reactions
+-   Diffusion limited
+-   Slow
+-   Contains irreversibilities
+:::
+::::
+:::
+::::
+
+
+
+:::: {.dd}
+:::{.dd-head onclick="toggleBox(this)"}
+Picture gets muddled
+:::
+:::{.dd-box}
+-   Charge transfer
+-   Redox reactions
+-   Diffusion limited
+-   Slow
+-   Contains irreversibilities
+:::
+::::
+</code></pre>
+
+
+</section>
 </section>
 
 </main> <!-- /main -->

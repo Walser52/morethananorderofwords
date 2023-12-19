@@ -19,5 +19,75 @@
     "title": "Tables",
     "section": "",
     "text": "Source To hide a column that in a longtable or a tabular environment\n\\newsavebox\\dummy\n\\newcolumntype{H}{&gt;{\\begin{lrbox}{\\dummy}}c&lt;{\\end{lrbox}}@{}}\nYou can now use H for any column that you wish to hide.\n\\begin{tabular}{rHl}\nComplete example:\n    \\documentclass{article}\n    \\usepackage{array}\n    \\newsavebox\\dummy\n    \\newcolumntype{H}{&gt;{\\begin{lrbox}{\\dummy}}c&lt;{\\end{lrbox}}@{}}\n    \\begin{document}\n    \\raggedright\n    \\begin{tabular}{rl}\n    one & two\\\\\n    three & four\\\\\n    \\end{tabular}\n\n    \\begin{tabular}{rHl}\n    one & something & two\\\\\n    three & not visible & four\\\\\n    \\end{tabular}\n    \\end{document}"
+  },
+  {
+    "objectID": "revealhome.html",
+    "href": "revealhome.html",
+    "title": "RevealJS",
+    "section": "",
+    "text": "Collapsible blocks"
+  },
+  {
+    "objectID": "RevealJS/collapsibleboxes.html",
+    "href": "RevealJS/collapsibleboxes.html",
+    "title": "Collapsible Boxes in Reveal",
+    "section": "",
+    "text": "To achieve the following effect (in html or in reveal slides).\n\n\n\n\nThesis\n\n\n\nFeatures\nMore features\n\n\n\n\n\n\nAnti-thesis\n\n\n\nAnti-Features\nMore anti-features\n\n\n\n\n\n\n\nSynthesis\n\n\n\nFeature + Anti-feature"
+  },
+  {
+    "objectID": "RevealJS/collapsibleboxes.html#desired-output",
+    "href": "RevealJS/collapsibleboxes.html#desired-output",
+    "title": "Collapsible Boxes in Reveal",
+    "section": "",
+    "text": "To achieve the following effect (in html or in reveal slides).\n\n\n\n\nThesis\n\n\n\nFeatures\nMore features\n\n\n\n\n\n\nAnti-thesis\n\n\n\nAnti-Features\nMore anti-features\n\n\n\n\n\n\n\nSynthesis\n\n\n\nFeature + Anti-feature"
+  },
+  {
+    "objectID": "RevealJS/collapsibleboxes.html#ingredients",
+    "href": "RevealJS/collapsibleboxes.html#ingredients",
+    "title": "Collapsible Boxes in Reveal",
+    "section": "Ingredients",
+    "text": "Ingredients"
+  },
+  {
+    "objectID": "RevealJS/collapsibleboxes.html#javascript",
+    "href": "RevealJS/collapsibleboxes.html#javascript",
+    "title": "Collapsible Boxes in Reveal",
+    "section": "Javascript",
+    "text": "Javascript\n&lt;script src=\"https://code.jquery.com/jquery-3.6.4.min.js\"&gt;&lt;/script&gt;\n\n&lt;script&gt;\nfunction toggleBox(header) {\n  // Use jQuery to find the associated container and toggle its visibility\n  $(header).next('.dd-box').slideToggle();\n}\n&lt;/script&gt;\n\nCSS\nCreate a css file:\n    .dd {\n      margin: 1em 0;\n      border: 2px solid gray;\n      border-left: 10px solid teal; \n      border-radius: 10px;\n    }\n\n    .dd-head {\n      margin-left: 0em;\n      padding-left:  60px;\n      padding-top:  5px;\n      padding-bottom: 0.1em;\n      color: black;\n      background-color: rgb(123, 173, 173);\n      border-top-right-radius: 10px;\n      font-size: 1em;\n      font-weight: bold;\n      background-size: 40px;\n      background-repeat: no-repeat;\n      background-position: 15px center;\n      background-image: url(\"goal.png\");\n      cursor: pointer; /* Add cursor style to indicate it's clickable */\n    }\n\n    .dd-box {\n      padding-top: 5px;\n      padding-left: 10px;\n      color: black;\n      background-color: white;\n      border-bottom-right-radius: 10px;\n      display: none; /* Initially hide the container */\n    }\n\nLink the file so that the yaml header reads:\nformat: html: theme: cosmo css: css/callouts.css include-in-header: file: scripts/scripts.js\n\n\nQMD file content\n\n::::{.columns}\n:::{.column}\n:::: {.dd}\n:::{.dd-head onclick=\"toggleBox(this)\" style=\"color:red\"}\nCapacitive\n:::\n:::{.dd-box }\n-   No charge transfer\n-   Helmholtz Double layer\n-   Electrostatic\n-   Fast\n-   Reversible\n:::\n::::\n:::\n\n\n:::{.column}\n:::: {.dd}\n:::{.dd-head onclick=\"toggleBox(this)\"}\nDiffusive\n:::\n:::{.dd-box}\n-   Charge transfer\n-   Redox reactions\n-   Diffusion limited\n-   Slow\n-   Contains irreversibilities\n:::\n::::\n:::\n::::\n\n\n\n:::: {.dd}\n:::{.dd-head onclick=\"toggleBox(this)\"}\nPicture gets muddled\n:::\n:::{.dd-box}\n-   Charge transfer\n-   Redox reactions\n-   Diffusion limited\n-   Slow\n-   Contains irreversibilities\n:::\n::::"
+  },
+  {
+    "objectID": "RevealJS/tabs.html",
+    "href": "RevealJS/tabs.html",
+    "title": "Creating tabs",
+    "section": "",
+    "text": "To create something like this:\nUse the following:"
+  },
+  {
+    "objectID": "RevealJS/revealhome.html",
+    "href": "RevealJS/revealhome.html",
+    "title": "RevealJS",
+    "section": "",
+    "text": "Collapsible blocks"
+  },
+  {
+    "objectID": "RevealJS/tabs.html#quarto-file-html",
+    "href": "RevealJS/tabs.html#quarto-file-html",
+    "title": "Creating tabs",
+    "section": "Quarto file (HTML)",
+    "text": "Quarto file (HTML)\n## Results\n\n:::{.navbar}\n[Option 1]{.nav-option data-option=\"option1\" onclick=\"showContent(this)\"}\n[Option 2]{.nav-option data-option=\"option2\" onclick=\"showContent(this)\"}\n[Option 3]{.nav-option data-option=\"option3\" onclick=\"showContent(this)\"}\n:::\n\n:::{#option1Content .content}\n![](_figs/caffeine.jpg)\n:::\n\n:::{#option2Content .content}\n![](_figs/aerial-forest.jpg)\n:::\n\n:::{#option3Content .content}\nThis is the content for Option 3.\n:::"
+  },
+  {
+    "objectID": "RevealJS/tabs.html#javascript",
+    "href": "RevealJS/tabs.html#javascript",
+    "title": "Creating tabs",
+    "section": "Javascript",
+    "text": "Javascript\n&lt;script&gt;\n    function showContent(clickedElement) {\n        // Hide all content divs\n        var allContents = document.getElementsByClassName('content');\n        for (var i = 0; i &lt; allContents.length; i++) {\n            allContents[i].style.display = 'none';\n        }\n\n        // Deactivate all nav options\n        var allNavOptions = document.getElementsByClassName('nav-option');\n        for (var i = 0; i &lt; allNavOptions.length; i++) {\n            allNavOptions[i].classList.remove('active');\n        }\n\n        // Show the selected content\n        var option = clickedElement.getAttribute('data-option');\n        document.getElementById(option + 'Content').style.display = 'block';\n\n        // Activate the selected nav option\n        clickedElement.classList.add('active');\n    }\n&lt;/script&gt;"
+  },
+  {
+    "objectID": "RevealJS/tabs.html#css",
+    "href": "RevealJS/tabs.html#css",
+    "title": "Creating tabs",
+    "section": "CSS",
+    "text": "CSS\n\n.navbar {\n    /*background-color: teal;*/\n    background-color: white;\n    overflow: hidden;\n    color: black;\n\n}\n\n.nav-option {\n    float: left;\n    display: block;\n    color: black;\n    text-align: center;\n    padding: 14px 16px;\n\n    cursor: pointer;\n    margin: 0;\n}\n\n.nav-option:hover {\n\n    background-color: #ddd;\n    color: black;\n}\n\n.nav-option.active {\n/*    background-color: yellow;*/\n    text-decoration: underline;\n    text-decoration-thickness: 10%;\n    text-decoration-color: Crimson;\n    color: black;\n\n}\n\n.content {\n    padding: 16px;\n    display: none;\n}"
   }
 ]

@@ -1,0 +1,5 @@
+---
+title: RevealJS
+---
+
+[Collapsible blocks](RevealJS/collapsibleboxes.qmd)

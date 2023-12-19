@@ -11,17 +11,23 @@ website:
     style: "docked"
     search: true
     contents:
-      - section: "Basics"
+      - section: "Quarto"
         contents:
           - tables.qmd
       - section: "Latex"
         contents:
           - tables.qmd
+      - section: "RevealJS"
+        contents:
+          - RevealJS/revealhome.qmd
 
 bibliography: references.bib
 
 format:
   html:
     theme: cosmo
-
-
+    # theme: [cosmo, css/callouts.scss]
+    css: css/callouts.css
+    include-in-header:
+      file: scripts/scripts.js
+    

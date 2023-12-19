@@ -1,0 +1,163 @@
+---
+title: Collapsible Boxes in Reveal
+---
+
+## Desired output:
+To achieve the following effect (in html or in reveal slides).
+
+::::{.columns}
+:::{.column}
+:::: {.dd}
+:::{.dd-head onclick="toggleBox(this)"}
+Thesis 
+:::
+:::{.dd-box }
+- Features
+- More features
+:::
+::::
+:::
+
+
+:::{.column}
+:::: {.dd}
+:::{.dd-head onclick="toggleBox(this)"}
+Anti-thesis
+:::
+:::{.dd-box}
+-   Anti-Features
+-   More anti-features
+:::
+::::
+:::
+::::
+
+
+
+:::: {.dd}
+:::{.dd-head onclick="toggleBox(this)" style="color:white"}
+Synthesis 
+:::
+:::{.dd-box}
+- Feature + Anti-feature
+:::
+::::
+
+## Ingredients
+
+## Javascript
+
+```{script}
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+<script>
+function toggleBox(header) {
+  // Use jQuery to find the associated container and toggle its visibility
+  $(header).next('.dd-box').slideToggle();
+}
+</script>
+```
+
+### CSS
+
+Create a css file:
+
+```{css}
+    .dd {
+      margin: 1em 0;
+      border: 2px solid gray;
+      border-left: 10px solid teal; 
+      border-radius: 10px;
+    }
+
+    .dd-head {
+      margin-left: 0em;
+      padding-left:  60px;
+      padding-top:  5px;
+      padding-bottom: 0.1em;
+      color: black;
+      background-color: rgb(123, 173, 173);
+      border-top-right-radius: 10px;
+      font-size: 1em;
+      font-weight: bold;
+      background-size: 40px;
+      background-repeat: no-repeat;
+      background-position: 15px center;
+      background-image: url("goal.png");
+      cursor: pointer; /* Add cursor style to indicate it's clickable */
+    }
+
+    .dd-box {
+      padding-top: 5px;
+      padding-left: 10px;
+      color: black;
+      background-color: white;
+      border-bottom-right-radius: 10px;
+      display: none; /* Initially hide the container */
+    }
+
+```
+
+Link the file so that the yaml header reads:
+
+
+format:
+  html:
+    theme: cosmo
+    css: css/callouts.css
+    include-in-header:
+      file: scripts/scripts.js
+
+### QMD file content
+
+```{qmd}
+
+::::{.columns}
+:::{.column}
+:::: {.dd}
+:::{.dd-head onclick="toggleBox(this)" style="color:red"}
+Capacitive
+:::
+:::{.dd-box }
+-   No charge transfer
+-   Helmholtz Double layer
+-   Electrostatic
+-   Fast
+-   Reversible
+:::
+::::
+:::
+
+
+:::{.column}
+:::: {.dd}
+:::{.dd-head onclick="toggleBox(this)"}
+Diffusive
+:::
+:::{.dd-box}
+-   Charge transfer
+-   Redox reactions
+-   Diffusion limited
+-   Slow
+-   Contains irreversibilities
+:::
+::::
+:::
+::::
+
+
+
+:::: {.dd}
+:::{.dd-head onclick="toggleBox(this)"}
+Picture gets muddled
+:::
+:::{.dd-box}
+-   Charge transfer
+-   Redox reactions
+-   Diffusion limited
+-   Slow
+-   Contains irreversibilities
+:::
+::::
+
+```
